@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090711">
+  <title>A little something for Poaonammm ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main>
+    <section class="screen active" id="intro">
+      <p class="eyebrow">A tiny universe, made for one person</p>
+      <div class="orbit-heart">♡<span></span></div>
+      <h1>Hey, <em>Poooonammm</em></h1>
+      <p class="lead">I made something for you.<br>Take a breath, turn the sound on if you like,<br>and let the little story unfold.</p>
+      <button class="primary" id="begin">Open your little surprise <span>↗</span></button>
+      <p class="micro">best experienced with headphones · no rush</p>
+    </section>
+
+    <section class="screen" id="story">
+      <p class="eyebrow">A thought I've been keeping</p>
+      <div class="counter"><span id="counter">01</span><i></i><span>04</span></div>
+      <h2 id="story-title">Some people make<br>ordinary moments <em>glow.</em></h2>
+      <p class="story-copy" id="story-copy">And somehow, you have a way of doing that without even trying.</p>
+      <button class="text-button" id="next-story">There's more <span>→</span></button>
+    </section>
+
+
+    <section class="screen particle-screen" id="particle-scene">
+      <p class="eyebrow" id="particle-eyebrow">A name worth turning into stardust</p>
+      <h2 class="particle-heading" id="particle-heading">A little universe, <em>just for you.</em></h2>
+      <div class="particle-stage">
+        <canvas id="particle-art" aria-label="Animated pink particles forming Poonam's name, a heart, and a photograph"></canvas>
+        <div class="particle-caption" id="particle-caption">First, a name...</div>
+      </div>
+      <p class="particle-description" id="particle-description">Some names deserve their own constellation.</p>
+      <button class="primary" id="particle-next">Let it bloom <span>✦</span></button>
+    </section>
+
+    <section class="screen" id="gallery">
+      <p class="eyebrow">A few moments that made me smile</p>
+      <h2>Simply <em>you.</em></h2>
+      <p class="gallery-note">A little collection of moments I wanted to celebrate.</p>
+      <div class="photo-grid">
+        <figure class="photo photo-tall"><img src="assets/poonam-red-saree.jpg" alt="Poonam in a red saree"><figcaption>That beautiful red ✨</figcaption></figure>
+        <figure class="photo photo-small"><img src="assets/poonam-blue-selfie-1.jpg" alt="Poonam smiling in a blue outfit"><figcaption>Your little smile</figcaption></figure>
+        <figure class="photo photo-small"><img src="assets/poonam-blue-selfie-2.jpg" alt="Another lovely selfie of Poonam"><figcaption>Effortlessly lovely</figcaption></figure>
+        <figure class="photo photo-wide"><img src="assets/poonam-red-saree-stairs.jpg" alt="Poonam sitting on the stairs in a red saree"><figcaption>A moment worth keeping</figcaption></figure>
+      </div>
+      <button class="primary" id="to-question">There is a little letter for you ha ha <span>♡</span></button>
+    </section>
+
+
+    <section class="screen letter-screen" id="letter">
+      <p class="eyebrow">A little something, written just for you</p>
+      <h2>Some words are better<br><em>opened slowly.</em></h2>
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <div class="letter-paper">
+            <p class="letter-hand">Dear Poon poon,</p>
+            <p>I don't know exactly when it happened, but somewhere between the little conversations and the moments that made me smile, you became someone I look forward to.</p>
+            <p>I made this because I wanted you to know that you're appreciated not for one big reason, but for all the little things that make you, <em>you</em>.</p>
+            <p class="letter-hand">With a smile,<br>someone who thinks you're special ♡</p>
+          </div>
+          <div class="envelope-back"></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-seal">P</div>
+        </div>
+      </div>
+      <p class="letter-hint" id="letter-hint">Tap the envelope to open your letter</p>
+      <button class="primary" id="letter-next" disabled>Now, one little question <span>♡</span></button>
+    </section>
+
+    <section class="screen" id="question">
+      <p class="eyebrow">So, here's me being brave</p>
+      <div class="big-heart">♥</div>
+      <h2>Poonam, would you let me<br><em>make more memories</em> with you?</h2>
+      <p class="question-copy">No grand promises or perfect lines. Just me, hoping we can see where this little story goes — together.</p>
+      <div class="answer-row">
+        <button class="primary" id="yes">I'd like that 💗</button>
+        <button class="quiet-button" id="not-yet">I need a little time</button>
+      </div>
+    </section>
+
+    <section class="screen" id="yes-screen">
+      <p class="eyebrow">A lil giftt to take away ur cramp pain</p>
+      <div class="success-heart">♥</div>
+      <h1 class="success-title">You just made<br>this moment <em>beautiful.</em></h1>
+      <p class="lead">Thank you, Poonammmm. Let's take it one smile,<br>one conversation, and one memory at a time. ❤️</p>
+      <p class="signature"> from someone who thinks you're wonderful</p>
+      <button class="text-button" id="replay">Watch it again cutie ↺</button>
+    </section>
+
+    <section class="screen" id="wait-screen">
+      <p class="eyebrow">And that's completely okay</p>
+      <div class="orbit-heart">♡</div>
+      <h2>Take all the time<br><em>you need.</em></h2>
+      <p class="lead">I meant what I said, and there's no pressure to answer right away. Your comfort matters most dearrr</p>
+      <button class="text-button" id="back-question">Go back ↶</button>
+    </section>
+  </main>
+  <audio id="love-song" src="assets/jeene-laga-hoon.mp3" preload="metadata" loop></audio>
+  <button class="music-toggle" id="music-toggle" aria-label="Play music" title="Play / pause music">
+    <span class="music-icon">♫</span><span id="music-label">Play thiss songgg</span><span class="music-bars"><i></i><i></i><i></i></span>
+  </button>
+  <div class="sound-note">✦ made by awnkyyy</div>
+  <script src="script.js"></script>
+</body>
+</html>
